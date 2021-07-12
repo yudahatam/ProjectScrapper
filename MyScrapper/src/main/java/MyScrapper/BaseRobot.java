@@ -1,4 +1,5 @@
 package MyScrapper;
+
 import java.util.Map;
 
 public abstract class BaseRobot {
@@ -21,6 +22,5 @@ public abstract class BaseRobot {
     public abstract int countInArticlesTitles(String text);
 
     public abstract String getLongestArticleTitle();
-
 
 }
