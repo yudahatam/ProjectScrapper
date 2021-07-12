@@ -4,13 +4,11 @@ public class Story {
     private String title;
     private String subTitle;
     private String body;
-    private String allText;
 
     public Story(String title, String subTitle, String body) {
         this.title = title;
         this.subTitle = subTitle;
         this.body = body;
-        allText = title.concat("\n" + subTitle).concat("\n" + body);
     }
 
     public String getTitle() {
@@ -36,13 +34,4 @@ public class Story {
     public void setBody(String body) {
         this.body = body;
     }
-
-    public String getAllText() {
-        return allText;
-    }
-
-    public void setAllText(String allText) {
-        this.allText = allText;
-    }
-
 }

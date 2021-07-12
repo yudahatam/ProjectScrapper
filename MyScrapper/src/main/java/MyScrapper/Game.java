@@ -7,17 +7,9 @@ public class Game {
 	private static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		BaseRobot bot = null;
-		/*
-		 * Code for the game
-		 */
 		System.out.println("Please choose which website to scrap:\n1.Mako\n2.Walla\n3.Ynet");
 		int choice = input.nextInt();
 		switch (choice) {
-			case 0:
-				System.out.println("You chose to exit program");
-				System.exit(0);
-				break;
 			case 1:
 				System.out.println("You have chosen Mako please wait a couple of seconds");
 				score(new MakoRobot());
@@ -38,7 +30,7 @@ public class Game {
 
 	public static void score(BaseRobot bot) {
 		Map<String, Integer> wordMap = bot.getWordsStatistics();
-		int guesses = 2;
+		int guesses = 5;
 		int score = 0;
 		String guess;
 		int numGuess;

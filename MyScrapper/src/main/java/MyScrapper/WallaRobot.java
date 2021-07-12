@@ -153,13 +153,4 @@ public class WallaRobot extends BaseRobot {
 				wordCount.put(temp, wordCount.get(temp) + 1); // Update the count of the word in the map
 		}
 	}
-
-	public Map<String, Integer> getWordCount() {
-		return wordCount;
-	}
-
-	public void setWordCount(Map<String, Integer> wordCount) {
-		this.wordCount = wordCount;
-	}
-
 }
